@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "Lumarush",
+  "homepage": "https://lumarush.sshikhar.dev",
+  "items": [
+    {
+      "name": "animated-modal",
+      "description": "A modal component with animated transitions.",
+      "version": "1.0.0",
+      "files": [
+        {
+          "path": "components/ui/theme/ThemeSwitcher.tsx",
+          "type": "registry:component",
+          "target": "components/ui/theme/ThemeSwitcher.tsx"
+        },
+        {
+          "path": "registry/new-york/hello-world/use-hello-world.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}
