@@ -74,10 +74,10 @@ const HoverLink = ({ link }: { link?: string }) => {
               onClick={openLinkinNewTab}
             >
               <motion.p
-                className="font-manrope scale-x-125 text-lg leading-tight font-semibold"
+                className="font-manrope scale-x-125 text-lg leading-tight"
                 variants={{
-                  initial: { textDecoration: "none" },
-                  hover: { textDecoration: "underline 1px dotted" },
+                  initial: { fontWeight: "500" },
+                  hover: { fontWeight: "900" },
                 }}
               >
                 Let&#39;s Start Investing
