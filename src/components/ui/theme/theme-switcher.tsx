@@ -63,7 +63,7 @@ const ThemeSwitcher = ({ className }: { className?: string }) => {
         duration: 500,
         easing: "ease-in-out",
         pseudoElement: "::view-transition-new(root)",
-      }
+      },
     );
   };
 
@@ -90,7 +90,7 @@ const ThemeSwitcher = ({ className }: { className?: string }) => {
       variant={"ghost"}
       className={cn(
         "size-9 cursor-pointer hover:bg-neutral-400/15 dark:hover:bg-neutral-500/10",
-        className
+        className,
       )}
       onClick={toggleTheme}
       ref={switcherRef}
@@ -121,10 +121,12 @@ const MoonIcon = () => (
     className="size-5 stroke-2"
     initial={{
       stroke: "var(--color-slate-500)",
+      fill: "none",
       rotate: -30,
     }}
     animate={{
-      stroke: "var(--color-blue-900)",
+      stroke: "var(--color-zinc-800)", // Change this for another color
+      fill: "var(--color-zinc-700)",
       rotate: 0,
     }}
   >
@@ -142,10 +144,12 @@ const SunIcon = () => (
     className="size-6 stroke-2"
     initial={{
       stroke: "var(--color-foreground)",
+      fill: "none",
       rotate: -30,
     }}
     animate={{
-      stroke: "var(--color-amber-500)",
+      stroke: "var(--color-yellow-200)",
+      fill: "var(--color-yellow-300)",
       rotate: 0,
     }}
   >

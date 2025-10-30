@@ -3,10 +3,10 @@ import { Navigation } from "./components/ui/nav/Navigation";
 
 function App() {
   return (
-    <div className="min-w-screen bg-stone-200 dark:bg-stone-600">
-      <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col bg-stone-50 dark:bg-stone-900">
+    <div className="min-w-screen bg-neutral-200 dark:bg-neutral-700">
+      <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col bg-neutral-50 dark:bg-neutral-800">
         <Navigation />
-        <HoverLink />
+        <HoverLink link="https://www.youtube.com" />
       </div>
     </div>
   );
